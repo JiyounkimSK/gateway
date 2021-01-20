@@ -24,6 +24,10 @@ spring:
           uri: http://localhost:8084
           predicates:
             - Path=/myPages/**, /myPages/**
+        - id: student
+          uri: http://localhost:8085
+          predicates:
+            - Path=/students/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -56,6 +60,10 @@ spring:
           uri: http://mypage:8080
           predicates:
             - Path=/myPages/**, /myPages/**
+        - id: student
+          uri: http://student:8080
+          predicates:
+            - Path=/students/**
       globalcors:
         corsConfigurations:
           '[/**]':
